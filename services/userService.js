@@ -22,7 +22,7 @@ async function update(user, id) {
     [user.firstName, user.lastName, user.email, id]
   );
 }
-
+// before amend
 async function destroy(id) {
   return await db.execute("DELETE from USERS where user.id = ?", [id]);
 }
