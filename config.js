@@ -1,10 +1,10 @@
 const dbConfig = {
   host: "localhost",
   user: "root",
-  password: "admin",
+  password: "",
   database: "express-users",
 };
 
 module.exports = {
-    dbConfig
+  dbConfig,
 };
