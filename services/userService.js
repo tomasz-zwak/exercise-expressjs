@@ -9,11 +9,10 @@ async function findById(id) {
 }
 
 async function create(user) {
-  return await db.execute("INSERT INTO users (first_name, last_name, email) VALUES (?, ?, ?)", [
-    user.firstName,
-    user.lastName,
-    user.email,
-  ]);
+  return await db.execute(
+    "INSERT INTO users (first_name, last_name, email) VALUES (?, ?, ?)",
+    [user.firstName, user.lastName, user.email]
+  );
 }
 
 async function update(user, id) {
@@ -24,7 +23,7 @@ async function update(user, id) {
 }
 // before amend
 async function destroy(id) {
-  return await db.execute("DELETE from USERS where user.id = ?", [id]);
+  return await db.execute("DELETE from USERS where users.id = ?", [id]);
 }
 
 module.exports = {

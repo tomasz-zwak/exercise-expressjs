@@ -1,10 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS `express-users`;
 USE `express-users`;
 
---
--- Table structure for table `employee`
---
-
 DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
@@ -14,10 +10,6 @@ CREATE TABLE `users` (
   `email` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
-
---
--- Data for table `employee`
---
 
 INSERT INTO `users` VALUES 
 	(1,'Leslie','Andrews','leslie@testapp.com'),
